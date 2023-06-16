@@ -1,10 +1,10 @@
 % !TEX TS-program = lualatex
 % !TEX encoding = UTF-8
 
-\documentclass[nocturnale-romanum.tex]{subfiles}
+\documentclass[invitatoriale-romanum.tex]{subfiles}
 
 \ifcsname preamble@file\endcsname
-  \setcounter{page}{\getpagerefnumber{M-nr30_commune_apostolorum}}
+  \setcounter{page}{\getpagerefnumber{M-ir30_communia}}
 \fi
 
 \begin{document}
@@ -28,7 +28,7 @@
 \rubricsolemnfeasts
 \gscore{APEXIa}{I}{}{Regem Apostolorum (tonus solemnis)}
 \rubrictp
-\gscore{APTPI}{I}{}{Regem apostolorum Dominum venite... alleluia}
+\gscore{APTPI}{I}{}{Regem Apostolorum (tempore paschali)}
 
 \feast{UMEX}{Commune unius aut plurimorum Martyrum}
 	{Commune Sanctorum}{Commune Martyrum}{2}{}{}{}{}{}{}
@@ -54,6 +54,7 @@
 \gscore{COPOIb}{I}{}{Regem Confessorum (tonus festivus)}
 \rubricsolemnfeasts
 \gscore{COPOIc}{I}{}{Regem Confessorum (tonus solemnis)}
+\pagebreak
 \rubrictp
 \gscore{COPOId}{I}{}{Regem Confessorum (tempore paschali)}
 
@@ -67,6 +68,7 @@
 \gscore{MUVXIa}{I}{}{Regem Virginum (tonus simplex)}
 \rubricdoublefeasts
 \gscore{MUVXIb}{I}{}{Regem Virginum (tonus festivus)}
+\pagebreak
 \rubricsolemnfeasts
 \gscore{MUVXIc}{I}{}{Regem Virginum (tonus solemnis)}
 \rubrictp
@@ -75,26 +77,27 @@
 \feast{MU}{Commune Mulierum}
 	{Commune Sanctorum}{Commune Mulierum}{2}{}{}{}{}{}{}
 \addcontentsline{toc}{section}{Commune Mulierum}
-
+\rubric{Pro una Virgine:}
 \gscore{MUNXIa}{I}{}{Laudemus (unius non virginis)}
+\pagebreak
+\rubric{Pro plurimis Virginis:}
 \gscore{MUNXIb}{I}{}{Laudemus (plurimarum non virginis)}
-
 
 
 \feast{CDED}{Commune Dedicationis Ecclesiæ}
 	{Commune Sanctorum}{Commune Dedicationis Ecclesiæ}{2}{}{}{}{}{}{}
 \addcontentsline{toc}{section}{Commune Dedicationis}
-\gscore{CDEDI}{I}{}{Domum Dei decet}
+\gscore{CDEDI}{I}{}{Domum Dei}
 
-\rubric{Infra Octavam et in die Octava Invitatorium ut in Festo.}
+\twocolrubric{Infra Octavam et in die Octava Invitatorium ut in Festo.}{Infra Octavam et in die Octava nihil fit de Festo.}
 
-
+\pagebreak
 
 \feast{CBMV}{Commune Beatæ Mariæ Virginis}
 	{Commune Sanctorum}{Commune Beatæ Mariæ Virginis}{2}{}{}{}{}{}{}
 \addcontentsline{toc}{section}{Commune Beatæ Mariæ Virginis}
 
-\gscore{CBMVI}{I}{}{Sancta Maria Dei Genitrix Virgo}
+\gscore{CBMVI}{I}{}{Sancta Maria}
 
 \feast{CSMS}{De Sancta Maria in Sabbato}
 	{Commune Sanctorum}{De Sancta Maria in Sabbato}{2}{}
@@ -102,15 +105,15 @@
 	{}{}
 \addcontentsline{toc}{section}{De Sancta Maria in Sabbato}
 
-\gscore{CSMSI}{I}{}{Ave Maria gratia plena Dominus tecum}
+\gscore{CSMSI}{I}{}{Ave Maria gratia plena}
+
+\pagebreak
 
 \feast{OPBM}{Officium Parvum\\Beatæ Mariæ Virginis}
 	{Officium Parvum B. M. V.}{Officium Parvum B. M. V.}{2}{}{}{}{}{}{}
 \addcontentsline{toc}{section}{Officium Parvum B. M. V.}
 
 \rubric{Invitatorium \scorename{CSMSI}, ut supra. Tempore Paschali in fine Invitatorii \normaltext{Alleluia} non additur.}
-
-
 
 
 \feast{ODEF}{Officium Defunctorum}

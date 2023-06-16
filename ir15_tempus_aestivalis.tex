@@ -1,24 +1,36 @@
 % !TEX TS-program = lualatex
 % !TEX encoding = UTF-8
 
-\documentclass[nocturnale-romanum.tex]{subfiles}
+\documentclass[invitatoriale-romanum.tex]{subfiles}
 
 \ifcsname preamble@file\endcsname
-  \setcounter{page}{\getpagerefnumber{M-nr15_tempus_paschale}}
+  \setcounter{page}{\getpagerefnumber{M-ir15_tempus_aestivalis}}
 \fi
 
 \begin{document}
 
-\feast{P0F1}{In Dominicis et Feriis Tempore Paschali\\ante Ascensionem}
+\feast{P0F1}{Dominica Resurrectionis}
 	{Proprium de Tempore}{Tempus Paschale ante Ascensionem}{1}{}
-	{Duplex I. classis}{I. classis}{Jesu Christi, Domini nostri!Resurrectio}
+	{}{}{Jesu Christi, Domini nostri!Resurrectio}
+	{}
+	{}
+\vspace{-4mm}
+\feast{P0F1}{et in Dominicis et Feriis\\Tempore Paschali ante Ascensionem}
+	{Proprium de Tempore}{Tempus Paschale ante Ascensionem}{2}{}
+	{}{}{}
 	{}
 	{}
 \gscore{P0I}{I}{}{Surrexit Dominus vere}
 
-\feast{P5F5}{In Ascensione Domini et post Ascensionem}
+\feast{P5F5}{In Ascensione Domini}
 	{Proprium de Tempore}{Tempus Paschale post Ascensionem}{1}{}
-	{Duplex I. classis}{I. classis}{Jesu Christi, Domini nostri!Ascensio}
+	{}{}{Jesu Christi, Domini nostri!Ascensio}
+	{}
+	{}
+\vspace{-4mm}
+\feast{P5F5}{et post Ascensionem}
+	{Proprium de Tempore}{Tempus Paschale post Ascensionem}{2}{}
+	{}{}{}
 	{}
 	{}
 \gscore{P5F5I}{I}{}{Alleluia Christum Dominum}
@@ -27,50 +39,51 @@
 
 \feast{P7F1}{Dominica Pentecostes}
 	{Proprium de Tempore}{Dominica Pentecostes}{1}{}
-	{Duplex I. classis}{I. classis}{Pentecostes}
+	{}{}{Pentecostes}
 	{}
 	{}
-\gscore{P7I}{I}{}{Alleluia spiritus Domini replevit}
+\gscore{P7I}{I}{}{Alleluia Spiritus Domini}
 
 \rubric{Præcedens Invitatorium dicitur usque ad Sabbatum Quatuor Temporum Pentecostes inclusive.}
 
 \feast{H1F1}{In Festo Sanctissimæ Trinitatis}
 	{Proprium de Tempore}{In Festo Sanctissimæ Trinitatis}{2}{Dominica I post Pentecosten}
-	{Duplex I. classis}{I. classis}{Trinitatis}
+	{}{}{Trinitatis}
 	{}
 	{}
-\gscore{H1I}{I}{}{Deum verum unum in Trinitate}
+\gscore{H1I}{I}{}{Deum verum}
 
 \rubric{In Feriis II, III et IV post Octavam Pentecosten, Invitatorium per Annum, ut infra pag.\ \pageref{M-F2s}.}
 
 \feast{H1F5}{In Festo Sanctissimi Corporis Christi}
 	{Proprium de Tempore}{In Festo Sanctissimi Corporis Christi}{2}{Feria V post Octavam Pentecosten}
 	{Duplex I. classis}{I. classis}{Jesu Christi, Domini nostri!Corpus}
-	{Infra Octavam (et in Dominica infra Octavam) et in die Octava Invitatorium ut in Festo.}
-	{}
-\gscore{H1F5I}{I}{}{Christum regem adoremus}
+	{}{}
+\gscore{H1F5I}{I}{}{Christum Regem adoremus}
+\twocolrubric{Infra Octavam (et in Dominica infra Octavam) et in die Octava, Invitatorium ut in Festo.}{Infra Octavam (et in Dominica infra Octavam) et in die Octava, Invitatorium per Annum, ut infra pag.\ \pageref{M-F2s}.}
 
 \feast{H2F6}{In Festo Sacratissimi Cordis Jesu}
 	{Proprium de Tempore}{In Festo Sacratissimi Cordis Jesu}{2}{Feria VI post Octavam Ss. Corporis Christi}
 	{Duplex I. classis}{I. classis}{Jesu Christi, Domini nostri!Cor}
-	{Infra Octavam (et in Dominica infra Octavam) et in die Octava Invitatorium ut in Festo.}
-	{}
+	{}{}
 \gscore{H2F6I}{I}{}{Cor Jesu amore}
+\twocolrubric{Infra Octavam (et in Dominica infra Octavam) et in die Octava, Invitatorium ut in Festo.}{Infra Octavam (et in Dominica infra Octavam) et in die Octava, Invitatorium per Annum, ut infra pag.\ \pageref{M-F2s}.}
 
 \feast{F1s}{In Dominicis post Pentecosten}
 	{Proprium de Tempore}{Post Pentecosten}{2}{}
-	{Semiduplex}{II. classis}{}
+	{}{}{}
 	{}
 	{}
 \rubric{Usque ad mensem Septembris inclusive:}
 \gscore{F1Is}{I}{}{Dominum qui fecit nos}
+\vspace{\baselineskip}
 \rubric{In mensibus Octobris et Novembris:}
 \gscore{F1Iw}{I}{}{Adoremus Dominum}
 
 \feast{F2s}{Feria II}{Proprium de Tempore}{Post Pentecosten}{2}{}{}{}{}{}{}
 \gscore{F2I}{I}{}{Venite exsultemus}
-\rubric{In primo Psalmi versu non repetitur \normaltext{Veníte, exsultémus Dómino},
-sed post repititum Invitatorium, statim subjungitur \normaltext{Jubilémus Deo}, etc.}
+
+\pagebreak
 
 \feast{F3s}{Feria III}{Proprium de Tempore}{Post Pentecosten}{2}{}{}{}{}{}{}
 \gscore{F3I}{I}{}{Jubilemus Deo}

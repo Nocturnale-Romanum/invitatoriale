@@ -1,54 +1,111 @@
 % !TEX TS-program = lualatex
 % !TEX encoding = UTF-8
 
-\documentclass[nocturnale-romanum.tex]{subfiles}
+\documentclass[invitatoriale-romanum.tex]{subfiles}
 
 \ifcsname preamble@file\endcsname
-  \setcounter{page}{\getpagerefnumber{M-nr01_prolegomena}}
+  \setcounter{page}{\getpagerefnumber{M-ir01_prolegomena}}
 \fi
 
 \begin{document}
+
+\begin{titlepage}
+\begin{center}
+\null\vspace{40mm}
+
+{\Huge{}INVITATORIALE}
+
+\vspace{1cm}
+
+{\Large\sc{}pro nocturnis horis\\in omnis diebus per totius anni circulum}
+
+\vspace{5mm}
+
+{\large\sc{}secundum ordinem Divini Officii\\a Pio pp X restituti}
+
+\vspace{5mm}
+
+{\large\sc{}cum Invitatoriis in cantu gregoriano\\et tonis Psalmi Invitatorii}
+
+\vspace{3.5cm}
+
+{\large\sc{}instrumentum laboris}
+
+\vfill
+
+MMXXIII
+
+\end{center}
+\end{titlepage}
+
+\null
+
+\feast{OR}{Prolegomena}
+	{Prolegomena}{Prolegomena}{2}{}{}{}{}{}{}
+\thispagestyle{empty}
 \addcontentsline{toc}{section}{Prolegomena}
 
-\feast{OR}{Rubricæ Generales Divini Officii ad Matutinum}
-	{Prolegomena}{Rubricæ Generales}{2}{}{}{}{}{}{}
-\addcontentsline{toc}{section}{Rubricæ Generales}
+\begin{english}
+	
+\intermediatetitle{A taste of things to come}
 
-\rubric{Ante Officium, genuis flexis, licet ab omnibus secreto dicere \normaltext{Aperi, Dómine} et \normaltext{Dómine, in unióne}.}
+{\setlength{\parindent}{5mm}\small
 
-\rubric{Posteaquam omnes locum sibi proprium occupaverunt, omnes assurgent et, si fit consuetudinem, dicunt totum secreto \normaltext{Pater}, \normaltext{Ave}, \normaltext{Credo}.}
+This book does not present itself as one of the volumes of what will, God willing, become a complete edition of the \emph{Nocturnale Romanum}, but aims to give cantors a taste of things to come. It contains the Invitatories for the whole year of the traditional Roman Office (following the overhaul of ferial Invitatories by St. Pius X), and the relevant psalm tones.
 
-\rubric{Tum Hebdomadarius cantat \normaltext{Dómine, lábia mea}, et respondet chorus \normaltext{Et os meum}; deinde continuat Hebdomadarius \normaltext{Deus in adjutórium}. Ad \normaltext{Dómine, lábia mea} se signant omnes in ore a pollice dextero, et ad \normaltext{Deus in adjutórium} se signant omnes a manu. Dum cantatur \normaltext{Glória Patri}, omnes caput profunde inclinabunt.}
+Its melodies rely both on the most recent practical edition of chant books for the reformed Roman Office --- in our case, the 2019 \emph{Liber Hymnarius}, and on critical comparison of dozens of ancient manuscripts.
+Invitatories of very recent introduction have been given melodies of the existing tradition of Gregorian Chant.
 
-\rubric{Postea cantatur conveniens invitatorium. Invitatorium ante psalmum \normaltext{Veníte} Cantores cantant, et omnes repetunt. Post singulos ejusdem psalmi versus, a Cantores cantatum, invitatorium vel integram vel ab asterisco \GreSpecial{*} alternatim omnes cantatur. Expleto psalmo, inchoatur hymnus ab Hebdomadario, et a duobus choris alternatim cantatur. Quum in ultimo versu nominabitur SS. Trinitas, caput ab omnibus inclinabitur.}
+This book attempts to enable the Church at large to render unto God a fitting praise in the present; this is in part why it uses rhythmic signs, based on the rules of the \emph{mora vocis}
+and on the rhythmic indications of the adiastematic manuscripts, where they exist, 
+because the faithful are accustomed to these signs more than to reproductions of ancient neumes: a table of equivalence is found below. 
+This is also why this book is laid out so that it may be used by those celebrating Divine Office according to either the 1960 or \emph{Divino Afflatu} rubrics: the rubrics predating the reforms of the 1950s are found in the left column where relevant, and the applicable 1960 rubrics are found in the right column.
 
-\rubric{Deinde cantantur antiphonæ convenientes, quæ in Officiis ritus duplicis ante et post psalmos integræ cantantur; in Officiis autem ritus semiduplicis initio psalmi inchoantur usque ad asteriscum \GreSpecial{*}, atque in fine integræ cantantur. Incepto primo versu primi psalmi, donec antiphona ultimi psalmi cujuslibet Nocturni repetita sit, sedent omnes. Antiphonæ inchoantur in primis ab Hebdomadario, deinde e dignissimo clero ad minus dignos fideles, secundum consuetudinem. Post ultimam antiphonam cujuslibet Nocturni, omnes stantes, cantat Cantor versum ut in Psalterio aut in Proprio, et respondent omnes.}
+This book is also, and most importantly at present, a \textbf{draft}. We, the editing team, are entirely too few to bring it up to proper standards by ourselves. 
+Please give your feedback on\\{\footnotesize\url{https://github.com/Nocturnale-Romanum/nocturnale-romanum/issues}}
 
-\rubric{Post versum cujuslibet Nocturni inchoat Hebdomadarius \normaltext{Pater noster}, deinde secreto usque ad :}
-\versiculus{Et ne nos indúcas in tentatiónem.}{Sed líbera nos a malo.}
+}
 
-\rubric{Hebdomadarius cantat Absolutio.}
+\end{english}
 
-\rubric{Lector, qui canturus sit lectionem primam, junctis manibus et ad Hebdomadarium conversus, cantat \normaltext{Jube, Domne, benedícere}. Hebdomadarius cantat congruens Benedictio.}
+\pagebreak
+\null
 
-\rubric{Si in choro non est diaconos vel sacerdos, ante singulas Lectiones Matutini, cantat Lector \normaltext{Jube, Dómine, benedícere}, ad Crucem conversus, et ipse Lector cantat congruens Benedictio. Digniores sive seniores ultimas Lectiones, minus antiqui primas cantent oportet.}
+\intermediatetitle{Un avant-goût de l'avenir}
 
-\rubric{Post \normaltext{Amen} a choro responsum, sedent omnes. Lectio peracta, fit Lector reverentiam ad Crucem, si Canonicus, secus genuflexionem, et cantat \normaltext{Tu autem}, etc.}
+{\setlength{\parindent}{5mm}\small
 
-\rubric{Post quamlibet vero Lectionem, quae Hymnum \normaltext{Te Deum} immediate non præcedat, congruens dicitur Responsorium, et in fine ultimi Responsorii cujuslibet Nocturni additur Versus:  \normaltext{Glória Patri, et Fílio, et Spirítui Sancto,} et Responsorium a Signo\/ {\upshape \dag,} et quidem a secundo\/ {\upshape \ddag} aut tertio\/  {\upshape\P,} si duo vel tria fuerint, repetitur.}
+Ce livre ne se présent pas comme l'un des volumes de ce qui deviendra, si Dieu le veut, une édition complète du \emph{Nocturnale Romanum}, mais vise à donner aux chantres qui l'utiliseront un avant-goût de l'avenir. Il contient les invitatoires pour toute l'année liturgique selon l'office romain traditionnel (postérieur aux réformes de saint Pie X qui ont modifié les invitatoires fériaux), ainsi que les tons du psaume de l'invitatoire.
 
-\rubric{Pro Lectionibus secunda, tertia, quinta, sexta et octava, unus Hebdomadarius ad benedictionem assurget.}
+Ses mélodies s'appuient à la fois sur l'édition pratique la plus récente des livres de chant pour l'office romain réformé --- en l'espèce, le \emph{Liber Hymnarius} de 2019, et sur l'étude critique de dizaines des plus anciens manuscrits.
+Les invitatoires d'introduction très récente ont reçu des mélodies tirées de la tradition grégorienne existante.
 
-\rubric{Pro 9. Lectionem, Hebdomadarius, conversus ad digniorem de choro, benedictionem ab illo petet, et dignior respondebit \normaltext{Ad societátem}, etc.}
+Ce livre veut permettre au plus grand nombre de fidèles de rendre à Dieu dès aujourd'hui un culte digne de lui; c'est pourquoi il emploie les signes rythmiques, 
+selon les règles de la \emph{mora vocis} et d'après les indications rythmiques des manuscrits adiastématiques, puisque les fidèles sont plus habitués à ces signes qu'à la copie des neumes anciens:
+une table de correspondance est donnée ci-après. 
+C'est aussi la raison pour laquelle ce livre, autant que possible, permet la célébration de l'Office Divin selon les rubriques de 1960 ou celles
+définies dans \emph{Divino Afflatu}: les rubriques antérieures aux réformes des années 1950 sont données en colonne de gauche, et celles du Code de 1960 en colonne de droite.
 
-\rubric{Ab Epsicopo autem, ultimam Lectionem cantaturo, item cantatur: \normaltext{Jube, Dómine, benedícere}, et respondetur a Choro \normaltext{Amen}, Benedictio omissa, et omnes stant quando fit Lectio.}
+Ce livre est aussi, et surtout --- pour le moment --- un \textbf{brouillon}. L'équipe d'édition est beaucoup trop réduite pour en amener la qualité, par elle-même, à un niveau satisfaisant.
+Merci de bien vouloir signaler les corrections nécessaires sur\\{\footnotesize\url{https://github.com/Nocturnale-Romanum/nocturnale-romanum/issues}}
 
-\rubric{Si \normaltext{Te Deum} cantatur, omnes stantes, inchoatur a Hebdomadario. Ad versus \normaltext{Te ergo}, omnes genuflectent.}
+}
 
-\rubric{Deinde cantantur Laudes matutinas. Si Laudes non sequent, cantat Hebdomadarius \normaltext{Dóminus vobíscum} aut \normaltext{Dómine, exáudi} si in ordine diaconatus non est constitutus, et Orationem, ut ad Laudes, sed semper sine commemorationes, et item \normaltext{Dóminus vobíscum}, et cantant Cantores \normaltext{Benedicámus Dómino}. Omnes respondent \normaltext{Deo grátias}.}
+\pagebreak
 
-\rubric{Item cantat Hebdomadarius, voce recta et depressa, omnes se manu signans, versus \normaltext{Fidélium ánimæ}.}
+\null\vfill
 
-\rubric{Omnes, genua flectantes, secreto dicent \normaltext{Pater noster}, si fit consuetudinem.}
+\intermediatetitle{Tabella neumatum}
+
+{\gresetnabc{1}{visible}
+\gresetclef{invisible}
+\gresetinitiallines{0}
+\gregorioscore{\subfix{nocturnale-romanum/gabc/neumata}}
+}
+
+\vfill
+
+\cleardoublepage
+
 
 \end{document}

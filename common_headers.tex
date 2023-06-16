@@ -14,7 +14,7 @@
 %%%%%%%%%%%%%%% STANDARD PACKAGES %%%%%%%%%%%%%%%
 
 %% This is the format of the recent Solesmes books.
-\usepackage[paperwidth=135mm, paperheight=205mm]{geometry}
+\usepackage[paperwidth=145mm, paperheight=205mm]{geometry}
 
 %% This is the format of the 1912 Antiphonale Romanum
 %\usepackage[paperwidth=160mm, paperheight=240mm]{geometry}
@@ -37,12 +37,13 @@
 
 %\setdefaultlanguage[variant=ecclesiastic, hyphenation=liturgical, usej=true, babelshorthands=false]{latin}
 \setdefaultlanguage[variant=french, frenchitemlabels=false]{french}
+\setotherlanguage{english}
 
 %%%%%%%%%%%%%%% GEOMETRY %%%%%%%%%%%%%%%
 
 %% This should mimic the layout of the recent Solesmes books.
 \geometry{
-inner=15mm,
+inner=25mm,
 outer=10mm,
 top=12mm,
 bottom=15mm,
@@ -69,7 +70,7 @@ headsep=3mm,
 
 %%%%%%%%%%%%%%% GREGORIO CONFIG %%%%%%%%%%%%%%%
 
-\usepackage[autocompile]{gregoriotex}
+\usepackage[forcecompile]{gregoriotex}
 
 %% text above lines shall be of color gregoriocolor
 \grechangestyle{abovelinestext}{\color{gregoriocolor}\footnotesize\itshape}
@@ -122,7 +123,7 @@ headsep=3mm,
   %% the use of a directory called "gabc" is linked
   %% to the management of gabc files by the website: do not change 
   %% without also changing the website static files structure
-  \gregorioscore{\subfix{gabc/#1}}
+  \gregorioscore{\subfix{nocturnale-romanum/gabc/#1}}
   \gresetinitiallines{1}
 }
 
@@ -152,12 +153,17 @@ headsep=3mm,
   %% the use of a directory called "gabc" is linked
   %% to the management of gabc files by the website: do not change 
   %% without also changing the website static files structure
-  \gregorioscore{\subfix{gabc/#2}}
+  \gregorioscore{\subfix{nocturnale-romanum/gabc/#2}}
   %% if optional arg #1 has been passed as 'n', unset no initial
   \ifx n#1\gresetinitiallines{1}\fi
   \vspace{1mm}
 }
 \makeatother
+
+%%% We select if we want to show NABC. Here, we don't.
+
+\gresetnabc{1}{invisible}
+\gresetnabc{2}{invisible}
 
 %%%%%%%%%%%%%%% FONTS %%%%%%%%%%%%%%%
 
@@ -255,6 +261,18 @@ headsep=3mm,
 %% Macro to print the common rubric that signals the Paschaltide three-psalm one-antiphon rule
 \newcommand{\tptresrubric}{\rubric{Tempore Paschali tres Psalmi sub hac Antiphona dicuntur.}}
 
+%% Macro to print a reference to a single Invitatory
+\newcommand{\invitref}[1]{\rubric{Invitatorium \scorename{#1}, pag.\ \pageref{M-#1}.}}
+
+%% Macro to print the common rubric "invitatorium de feria"
+\newcommand{\invitferia}{\rubric{Invitatorium de Feria.}}
+
+%% Macros to print the common rubrics regarding feast solemnity
+\newcommand{\rubricsimplefeasts}{\rubric{Tonus simplex:}}
+\newcommand{\rubricdoublefeasts}{\rubric{Tonus festivus:}}
+\newcommand{\rubricsolemnfeasts}{\rubric{Tonus solemnis:}}
+\newcommand{\rubrictp}{\rubric{Tempore Paschali:}}
+
 %% Macro to print a separator
 
 \newcommand{\sep}{{\centering\greseparator{3}{20}\par}}
@@ -278,12 +296,12 @@ headsep=3mm,
 	\begin{itemize}[
 		label=\null, 
 		leftmargin=0pt, 
-		itemindent=0pt, 
+		itemindent=5pt, 
 		labelsep=0pt, 
 		labelwidth=0pt, 
 		rightmargin=0pt, 
 		parsep=0pt, 
-		itemsep=0pt]
+		itemsep=0pt plus 1pt]
 	\input{psalmi/#1_#2.tex}
 	\end{itemize}
 	\end{multicols}
@@ -386,16 +404,14 @@ headsep=3mm,
 	\index[F]{\indexfeastname}
   }
   %% we typeset a two-column rank & rubrics block if one rank is filled in
-  \ifblank{#1}{}{%
-    \begin{parcolumns}[rulebetween]{2}
+  %% if the left rubric is filled in, we add a rule between the columns
+  \ifblank{#5}{\def\ourrule{}}{\def\ourrule{rulebetween}}
+  \ifblank{#1}{}{\vspace{-2mm}%
+    \begin{parcolumns}[\ourrule]{2}
 	\colchunk{%
-      {\centering\oldrank\par}%
-	  \ifblank{#4}{}{\rubric{\oldrubric}}
-	}
+      {\centering\oldrank\par}#4}%
 	\colchunk{%
-	  {\centering\newrank\par}%
-	  \ifblank{#5}{}{\rubric{\newrubric}}
-    }
+	  {\centering\newrank\par}#5}%
 	\end{parcolumns}
 	\vspace{2mm}
   }
