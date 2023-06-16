@@ -1,0 +1,38 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[11pt, twoside, french]{book}
+
+\input{common_headers}
+\externaldocument[M-]{\subfix{nocturnale-romanum}}
+
+\begin{document}
+
+\customsubfile{ir01_prolegomena}
+\customsubfile{ir10_tempus_hiemalis}
+\customsubfile{ir15_tempus_aestivalis}
+\customsubfile{ir20_psalterium_ordinarium}
+\customsubfile{ir30_communia}
+\customsubfile{ir40_sanctorale_januarii}
+\customsubfile{ir41_sanctorale_februarii}
+\customsubfile{ir42_sanctorale_martii}
+\customsubfile{ir43_sanctorale_aprilis}
+\customsubfile{ir44_sanctorale_maii}
+\customsubfile{ir45_sanctorale_junii}
+\customsubfile{ir46_sanctorale_julii}
+\customsubfile{ir47_sanctorale_augusti}
+\customsubfile{ir48_sanctorale_septembris}
+\customsubfile{ir49_sanctorale_octobris}
+\customsubfile{ir50_sanctorale_novembris}
+\customsubfile{ir51_sanctorale_decembris}
+\newpage
+\addcontentsline{toc}{chapter}{Indices}
+\cprintindex{I}{Index Invitatoriorum}
+\cprintindex{T}{Index Tonorum communorum}
+\cprintindex{F}{Index Festorum}
+\renewcommand\contentsname{Index Generalis}
+\tableofcontents
+\thispagestyle{empty}
+
+\end{document}
+
